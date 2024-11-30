@@ -1,0 +1,18 @@
+{
+  "topAsns": [
+    {"asn": "AMAZON-02", "count": 156},
+    {"asn": "GOOGLE", "count": 134},
+    {"asn": "MICROSOFT", "count": 98},
+    {"asn": "CLOUDFLARE", "count": 87},
+    {"asn": "DIGITALOCEAN", "count": 76}
+  ],
+  "topDomains": [
+    {"domain": "amazonaws.com", "cveCount": 245},
+    {"domain": "google.com", "cveCount": 198},
+    {"domain": "microsoft.com", "cveCount": 167},
+    {"domain": "cloudflare.com", "cveCount": 143},
+    {"domain": "digitalocean.com", "cveCount": 121}
+  ],
+  "totalEntries": 1250,
+  "totalCves": 3876
+}

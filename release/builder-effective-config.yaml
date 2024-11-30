@@ -1,0 +1,43 @@
+directories:
+  output: release
+  buildResources: build
+appId: com.hdn.cfc
+productName: HDN-CFC Platform
+asar: true
+mac:
+  category: public.app-category.developer-tools
+  icon: build/icon.icns
+  target:
+    - dmg
+    - zip
+  hardenedRuntime: true
+  gatekeeperAssess: false
+  entitlements: build/entitlements.mac.plist
+  entitlementsInherit: build/entitlements.mac.plist
+  darkModeSupport: true
+  notarize: false
+win:
+  icon: build/icon.ico
+  target:
+    - target: nsis
+      arch:
+        - x64
+    - target: portable
+      arch:
+        - x64
+  publisherName: HDN Security
+nsis:
+  oneClick: false
+  allowToChangeInstallationDirectory: true
+  createDesktopShortcut: true
+  createStartMenuShortcut: true
+  shortcutName: HDN-CFC Platform
+  installerIcon: build/icon.ico
+  uninstallerIcon: build/icon.ico
+portable:
+  artifactName: HDN-CFC-Platform-Portable-${version}.exe
+files:
+  - filter:
+      - dist/**/*
+      - electron/**/*
+electronVersion: 29.4.6
